@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkblue"
+    tools:context=".InProgress">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="339dp"
+        android:layout_marginBottom="675dp"
+        android:backgroundTint="@color/darkblue"
+        android:clickable="true"
+        android:onClick="ToCustomerUI"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@null"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        tools:ignore="OnClick">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ThumbsUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="339dp"
+        android:layout_marginTop="680dp"
+        android:layout_marginBottom="49dp"
+        android:backgroundTint="@color/darkblue"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_thumb_up_24"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@null"
+        tools:ignore="OnClick">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ThumbsDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="283dp"
+        android:layout_marginTop="680dp"
+
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="49dp"
+        android:backgroundTint="@color/darkblue"
+        android:clickable="true"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@null"
+        app:srcCompat="@drawable/ic_baseline_thumb_down_24"
+        tools:ignore="OnClick">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/orderDetails"
+        style="@style/centreLocatorCardDesign"
+        android:layout_width="381dp"
+        android:layout_height="226dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="415dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="144dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="379dp"
+        android:layout_height="301dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="403dp"
+        android:src="@drawable/progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="665dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="34dp"
+        android:text="Rate Order"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/train"
+    tools:context=".LoginSignUpScreen">
+
+    <Button
+        android:id="@+id/buttonSignUp2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="303dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="497dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="202dp"
+        android:background="@drawable/boarderinsideclear"
+        android:fontFamily="@font/lato"
+        android:onClick="ToRegUI"
+        android:text="Sign Up"
+        android:textColor="@color/darkblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="305dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="419dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="281dp"
+        android:background="@drawable/boarder"
+        android:fontFamily="@font/lato"
+        android:onClick="ToCusUI"
+        android:text="Customer Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSignUp3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="305dp"
+        android:layout_height="58dp"
+
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="582dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="118dp"
+        android:background="@drawable/boarder"
+        android:fontFamily="@font/lato"
+        android:onClick="ToStaffUI"
+        android:text="Staff Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="641dp"
+        android:fontFamily="@font/lato"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

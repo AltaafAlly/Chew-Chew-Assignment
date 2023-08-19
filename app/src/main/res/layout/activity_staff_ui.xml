@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkblue"
+    tools:context=".StaffUI">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginStart="339dp"
+        android:layout_marginTop="659dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/orange"
+        android:onClick="ToCreateOrder"
+        android:src="@drawable/ic_baseline_add_24"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="519dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="106dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="667dp"
+        android:layout_marginEnd="307dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/oval"
+        android:fontFamily="@font/lato"
+        android:onClick="logoutbtn"
+        android:text="LOGOUT"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="162dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="667dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/oval"
+        android:fontFamily="@font/lato"
+        android:onClick="Refresh"
+        android:text="Refresh order list"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="289dp"
+        android:layout_marginBottom="625dp"
+        android:fontFamily="@font/lato"
+        android:text="Orders"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="76dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="319dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="643dp"
+        android:backgroundTint="@color/darkblue"
+        android:clickable="true"
+        android:onClick="ToStaffProfile"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:fabCustomSize="75dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="60dp"
+        app:rippleColor="@null"
+        app:srcCompat="@drawable/profile_icon_white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
